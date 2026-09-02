@@ -7,8 +7,6 @@ namespace CrawlerServiceDbPart.Db.Configurations;
 
 public sealed class TermConfiguration : IEntityTypeConfiguration<Term>
 {
-    public const int TermTextLength = 50;
-
     public void Configure(EntityTypeBuilder<Term> builder)
     {
         //string tableName = nameof(Term).Pluralize();
@@ -16,7 +14,8 @@ public sealed class TermConfiguration : IEntityTypeConfiguration<Term>
 
         builder.HasKey(e => e.TrmId);
         builder.HasIndex(e => e.TermText);
-        builder.Property(e => e.TermText).HasMaxLength(TermTextLength); //.UseCollation("SQL_Latin1_General_CP1_CS_AS");
+        builder.Property(e => e.TermText)
+            .HasMaxLength(TermConstants.TermTextLength); //.UseCollation("SQL_Latin1_General_CP1_CS_AS");
         builder.Property(e => e.TermTypeId).HasColumnName(nameof(Term.TermTypeId).UnCapitalize());
 
         builder.HasOne(d => d.TermTypeNavigation).WithMany(p => p.Terms).HasForeignKey(d => d.TermTypeId);

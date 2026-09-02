@@ -6,8 +6,6 @@ namespace CrawlerServiceDbPart.Db.Configurations;
 
 public sealed class HostModelConfiguration : IEntityTypeConfiguration<HostModel>
 {
-    public const int HostNameLength = 253;
-
     public void Configure(EntityTypeBuilder<HostModel> builder)
     {
         const string tableName = "Hosts";
@@ -16,7 +14,7 @@ public sealed class HostModelConfiguration : IEntityTypeConfiguration<HostModel>
         builder.HasKey(e => e.HostId);
         builder.HasIndex(e => e.HostName).IsUnique();
 
-        builder.Property(e => e.HostName).HasMaxLength(HostNameLength);
+        builder.Property(e => e.HostName).HasMaxLength(HostModelConstants.HostNameLength);
         builder.Property(e => e.HostProhibited).HasDefaultValue(0);
     }
 }

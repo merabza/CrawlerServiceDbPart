@@ -6,8 +6,6 @@ namespace CrawlerServiceDbPart.Db.Configurations;
 
 public sealed class ExtensionModelConfiguration : IEntityTypeConfiguration<ExtensionModel>
 {
-    public const int ExtensionNameLength = 50;
-
     public void Configure(EntityTypeBuilder<ExtensionModel> builder)
     {
         const string tableName = "Extensions";
@@ -16,7 +14,7 @@ public sealed class ExtensionModelConfiguration : IEntityTypeConfiguration<Exten
         builder.HasKey(e => e.ExtId);
         builder.HasIndex(e => e.ExtName).IsUnique();
 
-        builder.Property(e => e.ExtName).HasMaxLength(ExtensionNameLength);
+        builder.Property(e => e.ExtName).HasMaxLength(ExtensionModelsConstants.ExtensionNameLength);
         builder.Property(e => e.ExtProhibited).HasDefaultValue(0);
     }
 }

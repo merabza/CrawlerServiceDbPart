@@ -6,8 +6,6 @@ namespace CrawlerServiceDbPart.Db.Configurations;
 
 public sealed class UrlModelConfiguration : IEntityTypeConfiguration<UrlModel>
 {
-    public const int TermTextLength = 2048;
-
     public void Configure(EntityTypeBuilder<UrlModel> builder)
     {
         const string tableName = "Urls";
@@ -16,7 +14,7 @@ public sealed class UrlModelConfiguration : IEntityTypeConfiguration<UrlModel>
         builder.HasKey(e => e.UrlId);
         builder.HasIndex(e => new { e.UrlHashCode, e.HostId, e.ExtensionId, e.SchemeId });
 
-        builder.Property(e => e.UrlName).HasMaxLength(TermTextLength);
+        builder.Property(e => e.UrlName).HasMaxLength(UrlModelConstants.UrlNameLength);
         builder.Property(e => e.IsSiteMap).HasDefaultValue(0);
         builder.Property(e => e.IsAllowed).HasDefaultValue(0);
 
