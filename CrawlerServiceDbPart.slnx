@@ -1,0 +1,17 @@
+<Solution>
+    <Folder Name="/CrawlerServiceRoot/">
+        <Project Path="../CrawlerServiceRoot/CrawlerServiceRoot.Application.Abstractions/CrawlerServiceRoot.Application.Abstractions.csproj" />
+        <Project Path="../CrawlerServiceRoot/CrawlerServiceRoot.Domain/CrawlerServiceRoot.Domain.csproj" />
+    </Folder>
+    <Folder Name="/Solution Items/">
+        <File Path=".editorconfig" />
+        <File Path="Directory.Build.props" />
+        <File Path="Directory.Packages.props" />
+    </Folder>
+    <Folder Name="/SystemTools/">
+        <Project Path="../SystemTools/SystemTools.DatabaseToolsShared/SystemTools.DatabaseToolsShared.csproj" />
+        <Project Path="../SystemTools/SystemTools.SharedKernel/SystemTools.SharedKernel.csproj" />
+        <Project Path="../SystemTools/SystemTools.SystemToolsShared/SystemTools.SystemToolsShared.csproj" />
+    </Folder>
+    <Project Path="CrawlerServiceDbPart.Db/CrawlerServiceDbPart.Db.csproj" />
+</Solution>
