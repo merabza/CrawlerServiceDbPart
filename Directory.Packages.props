@@ -1,12 +1,12 @@
-<Project>
+﻿<?xml version="1.0" encoding="utf-8"?><Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="CrawlerServiceRoot.Application.Abstractions" Version="0.0.9790.25533" />
-    <PackageVersion Include="CrawlerServiceRoot.Domain" Version="0.0.9790.25533" />
+    <PackageVersion Include="CrawlerServiceRoot.Application.Abstractions" Version="0.0.9790.27120" />
+    <PackageVersion Include="CrawlerServiceRoot.Domain" Version="0.0.9790.27120" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.13" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.35.0.4138" />
-    <PackageVersion Include="SystemTools.DatabaseToolsShared" Version="1.0.9790.24772" />
+    <PackageVersion Include="SystemTools.DatabaseToolsShared" Version="1.0.9790.27014" />
   </ItemGroup>
 </Project>
