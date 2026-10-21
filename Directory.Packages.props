@@ -3,10 +3,10 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="CrawlerServiceRoot.Application.Abstractions" Version="0.0.9790.32414" />
-    <PackageVersion Include="CrawlerServiceRoot.Domain" Version="0.0.9790.32414" />
+    <PackageVersion Include="CrawlerServiceRoot.Application.Abstractions" Version="0.0.9790.33473" />
+    <PackageVersion Include="CrawlerServiceRoot.Domain" Version="0.0.9790.33473" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.13" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.35.0.4138" />
-    <PackageVersion Include="SystemTools.DatabaseToolsShared" Version="1.0.9790.32369" />
+    <PackageVersion Include="SystemTools.DatabaseToolsShared" Version="1.0.9790.33334" />
   </ItemGroup>
 </Project>
