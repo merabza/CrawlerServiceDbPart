@@ -4,8 +4,8 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="CrawlerServiceRoot.Application.Abstractions" Version="0.0.9808.33357" />
-    <PackageVersion Include="CrawlerServiceRoot.Domain" Version="0.0.9808.33357" />
+    <PackageVersion Include="CrawlerServiceRoot.Application.Abstractions" Version="0.0.9808.42577" />
+    <PackageVersion Include="CrawlerServiceRoot.Domain" Version="0.0.9808.42577" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.14" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.35.0.4138" />
     <PackageVersion Include="SystemTools.DatabaseToolsShared" Version="1.0.9808.33287" />
